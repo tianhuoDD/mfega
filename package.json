@@ -1,0 +1,79 @@
+{
+	"name": "vexios",
+	"version": "1.0.1",
+	"description": "总结一套完整的、可复用的Vue3前端架构,实现拿来即用、拿来即开发。",
+	"private": true,
+	"author": "@Rom + @Can + @zheng-li-wei",
+	"repository": {
+		"type": "git",
+		"url": "https://gitee.com/guo-chengcan/VEXIOS"
+	},
+	"license": "MIT",
+	"packageManager": "pnpm@9.14.2",
+	"engines": {
+		"node": ">=20.15.0",
+		"pnpm": ">=9.14.2",
+		"npm": ">=999.0.0"
+	},
+	"type": "module",
+	"scripts": {
+		"om": "pnpm -F=opus-mart run dev",
+		"storybook": "pnpm -F=test-app run storybook",
+		"storybook-docs": "pnpm -F=test-app run build-storybook",
+		"test": "pnpm -F=test-app run dev",
+		"lint:eslint": "eslint . --fix",
+		"lint:prettier": "prettier --write .",
+		"prepare": "husky",
+		"lint:lint-staged": "lint-staged",
+		"commit": "git-cz"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
+	},
+	"lint-staged": {
+		"*.{js,ts,vue}": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"*.{cjs,json}": [
+			"prettier --write"
+		],
+		"*.{vue,html}": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"*.{scss,css}": [
+			"prettier --write"
+		],
+		"*.md": [
+			"prettier --write"
+		]
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.6.0",
+		"@commitlint/config-conventional": "^19.6.0",
+		"@eslint/js": "^9.15.0",
+		"commitizen": "^4.3.1",
+		"cz-git": "^1.11.0",
+		"eslint": "^9.15.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-vue": "^9.31.0",
+		"globals": "^15.12.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.2.10",
+		"prettier": "^3.4.0"
+	},
+	"json-comments": {
+		"tips": "请安装JSONComments插件为JSON文件提供注释功能",
+		"package.json": {
+			"scripts.lint:eslint": "使用 ESLint 检查全部文件",
+			"scripts.lint:prettier": "使用Prettier格式化全部代码",
+			"scripts.prepare": "在使用 pnpm i 后，安装 husky ",
+			"scripts.lint:lint-staged": "检查提交的代码，进行格式化",
+			"scripts.commit": "使用 git cz 进行格式化"
+		}
+	}
+}

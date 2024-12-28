@@ -1,0 +1,13 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# 项目根目录下的 .editorconfig 文件
+root = true
+# 适用于所有类型的文件
+[*]
+indent_style = tab # 使用制表符（Tab）来缩进代码
+indent_size = 2 # 设置 2 格为默认宽度
+tab_width = 2 # 设 2 格为tab默认宽度
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false # 去除行尾的多余空白字符
+insert_final_newline = false # 不在文件末尾插入一个空行

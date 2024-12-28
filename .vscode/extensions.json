@@ -1,0 +1,27 @@
+{
+	"recommendations": [
+		"lihuiwang.vue-alias-skip",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"dzhavat.bracket-pair-toggler",
+		"ms-ceintl.vscode-language-pack-zh-hans",
+		"streetsidesoftware.code-spell-checker",
+		"mikestead.dotenv",
+		"editorconfig.editorconfig",
+		"dbaeumer.vscode-eslint",
+		"mhutchie.git-graph",
+		"eamodio.gitlens",
+		"kisstkondoros.vscode-gutter-preview",
+		"wxzhang.json-comments",
+		"ritwickdey.liveserver",
+		"shd101wyy.markdown-preview-enhanced",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"esbenp.prettier-vscode",
+		"alefragnani.project-manager",
+		"simonsiefke.svg-preview",
+		"vue.volar",
+		"dariofuzinato.vue-peek",
+		"sdras.vue-vscode-snippets"
+	]
+}

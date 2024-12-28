@@ -1,0 +1,9 @@
+# prettier忽略格式化的文件
+**/.git
+**/.svn
+**/.hg
+
+**/node_modules
+**/dist
+**/mock
+**/public 
