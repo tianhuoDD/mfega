@@ -8,24 +8,11 @@
 - `packages`：存放组件
 - `libs`：存放工具
 
-`OpusMart`项目依赖：基于Vue3 + ElementPlus +
-`monorepo`架构依赖：ESLint v9.15.0 +
+`monorepo`架构依赖：esLint v9.15.0 + prettier v3.4.0 + lint-staged v15.2.10 + husky v9.1.7 + cz-git v1.11.0 + commitizen v4.3.1
 
 # 开发指南
 
 > **安装依赖时，必须明确是 _开发环境_ 依赖、还是 _生产环境_ 依赖**
-
-## 项目食用辅助
-
-### 一、icon-park图标使用方式
-
-1. 需要的图标从[icon-park官网](https://iconpark.oceanengine.com/official)中找到后，将其以`add-file`改为`AddFile`后放入该文件内：apps/opus-mart/src/assets/icon.js
-2. 使用时，在需要的地方使用`<i-AddFile />`使用即可。
-   还有其他使用方式：
-   ```vue
-   <component :is="icon" />
-   const icon=ref("i-AddFile")
-   ```
 
 ## 使用的依赖/包/扩展
 
@@ -43,6 +30,7 @@
 
 ## shell命令相关
 
+
 ### 开发相关命令
 
 1. 初始化依赖
@@ -54,7 +42,7 @@
 2. 启动服务
 
    ```shell
-   pnpm -F=opus-mart run dev
+   pnpm -F=app run dev
    # or
    pnpm run om
    ```
@@ -63,8 +51,8 @@
 
    ```shell
    # -P是生产环境、-D是开发环境
-   pnpm -F=opus-mart add -P <package>
-   pnpm -F=opus-mart add -D <package>
+   pnpm -F=app add -P <package>
+   pnpm -F=app add -D <package>
 
    # 向工作区根目录添加依赖
    pnpm add -D <package> -w
@@ -148,6 +136,4 @@
 1. 可添加的依赖: `@antfu/eslint-config`、`stylelint`、`lodash-es`、
 2. 可以使用的技术: `vueUse`、`turbo`、[`rimraf`](https://github.com/isaacs/rimraf)、[`del`](https://www.npmjs.com/package/del)、`consola`、`rollup-plugin-visualizer`
 3. 可使用的语言: `typescript`
-4. layout封装、tagsView封装、面包屑优化+封装
-5. 网站移动端适配
-6. layout侧边栏优化
+

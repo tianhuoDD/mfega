@@ -1,3 +1,1 @@
-[submodule "apps/punch-in"]
-	path = apps/punch-in
-	url = https://github.com/tianhuoDD/PunchIn.git
+# git 子模块链接
