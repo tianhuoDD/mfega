@@ -1,6 +1,6 @@
 {
 	"name": "vexios",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"description": "总结一套完整的、可复用的Vue3前端架构,实现拿来即用、拿来即开发。",
 	"private": true,
 	"author": "@Rom + @Can + @zheng-li-wei",
