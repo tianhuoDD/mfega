@@ -8,3 +8,6 @@
 [submodule "apps/opus-mart"]
 	path = apps/opus-mart
 	url = https://gitee.com/tianhuodd/opus-mart.git
+[submodule "apps/punch-in"]
+	path = apps/punch-in
+	url = https://github.com/tianhuoDD/punch-in.git
