@@ -2,3 +2,6 @@
 [submodule "libs/rom-libs"]
 	path = libs/rom-libs
 	url = https://github.com/tianhuoDD/rom-libs.git
+[submodule "packages/rom-packages"]
+	path = packages/rom-packages
+	url = https://github.com/tianhuoDD/rom-packages.git
