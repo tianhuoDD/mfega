@@ -1,1 +1,4 @@
 # git 子模块链接
+[submodule "libs/rom-libs"]
+	path = libs/rom-libs
+	url = https://github.com/tianhuoDD/rom-libs.git

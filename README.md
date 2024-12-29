@@ -113,6 +113,12 @@
    # 终止回退版本
    git revert --abort
    ```
+4. Git Submodule(Git子模块)使用
+   需要先将想要作为子模块的文件推送到远程仓库
+   ```shell
+   # <工作目录> 会自动创建，不需要手动创建
+   git submodule add <git仓库地址> <工作目录>
+   ```
 
 # 可能遇到的问题
 
