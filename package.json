@@ -17,10 +17,6 @@
 	},
 	"type": "module",
 	"scripts": {
-		"om": "pnpm -F=opus-mart run dev",
-		"storybook": "pnpm -F=test-app run storybook",
-		"storybook-docs": "pnpm -F=test-app run build-storybook",
-		"test": "pnpm -F=test-app run dev",
 		"lint:eslint": "eslint . --fix",
 		"lint:prettier": "prettier --write .",
 		"prepare": "husky",

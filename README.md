@@ -30,7 +30,6 @@
 
 ## shell命令相关
 
-
 ### 开发相关命令
 
 1. 初始化依赖
@@ -136,4 +135,3 @@
 1. 可添加的依赖: `@antfu/eslint-config`、`stylelint`、`lodash-es`、
 2. 可以使用的技术: `vueUse`、`turbo`、[`rimraf`](https://github.com/isaacs/rimraf)、[`del`](https://www.npmjs.com/package/del)、`consola`、`rollup-plugin-visualizer`
 3. 可使用的语言: `typescript`
-
