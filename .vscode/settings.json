@@ -1,6 +1,18 @@
 {
 	// `Code Spell Checker`扩展：忽略警告的单词
-	"cSpell.words": ["amfe", "axios", "httpcode", "MFEGA", "pinia", "pxtorem", "remixicon", "VITE", "vueuse", "zheng"],
+	"cSpell.words": [
+		"amfe",
+		"axios",
+		"httpcode",
+		"MFEGA",
+		"pinia",
+		"pxtorem",
+		"remixicon",
+		"romcere",
+		"VITE",
+		"vueuse",
+		"zheng"
+	],
 
 	// `ESLint`扩展：配置要检查的文件
 	"eslint.validate": [
