@@ -78,7 +78,39 @@
 
 ### git相关命令
 
-> git提交工具链：`husky`(git 钩子) + `lint-staged`(在git暂存区执行lint) + `commitlint`(检测是否符合提交规范) + `commitizen`和`git-cz`(辅助生成提交规范)
+> git提交工具链：`husky`(git 钩子) + `lint-staged`(在git暂存区执行lint) + `commitlint`(检测是否符合提交规范) + `commitizen`和`cz-git`(辅助生成提交规范)
+
+#### 一键使用Git提交工具链
+
+一键安装：进入指定项目终端：`pnpm init` + `pnpm -F=<指定项目> add -D husky lint-staged commitlint commitizen cz-git`
+拖动文件：`.husky`、`commitlint.config.js`，并在`package.json`中添加:
+
+```json
+{
+	"type": "module",
+	"scripts": {
+		"lint:eslint": "eslint . --fix",
+		"lint:prettier": "prettier --write .",
+		"prepare": "husky",
+		"lint:lint-staged": "lint-staged",
+		"commit": "git-cz"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
+	},
+	"lint-staged": {
+		"*.{js,ts,vue}": ["eslint --fix", "prettier --write"],
+		"*.{cjs,json}": ["prettier --write"],
+		"*.{vue,html}": ["eslint --fix", "prettier --write"],
+		"*.{scss,css}": ["prettier --write"],
+		"*.md": ["prettier --write"]
+	}
+}
+```
+
+#### Git提交规范
 
 1. 提交规范: `<type>(<scope>): <subject>`
    | type | 描述 |
