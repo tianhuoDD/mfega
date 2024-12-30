@@ -17,6 +17,8 @@
 	},
 	"type": "module",
 	"scripts": {
+		"om": "pnpm -F=opus-mart run dev",
+		"pi": "pnpm -F=punch-in run dev",
 		"lint:eslint": "eslint . --fix",
 		"lint:prettier": "prettier --write .",
 		"prepare": "husky",
