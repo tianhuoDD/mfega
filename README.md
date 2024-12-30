@@ -78,6 +78,8 @@
 
 ### git相关命令
 
+> git提交工具链：`husky`(git 钩子) + `lint-staged`(在git暂存区执行lint) + `commitlint`(检测是否符合提交规范) + `commitizen`和`git-cz`(辅助生成提交规范)
+
 1. 提交规范: `<type>(<scope>): <subject>`
    | type | 描述 |
    | ----------- | ----------- |
