@@ -25,13 +25,21 @@ export default [
 					ignores: ["index"], // 允许 index 文件
 				},
 			],
+			"no-useless-escape": "off", // 忽略转义字符的警告
 		},
 	},
 	/* 全局变量规则 */
 	{
 		languageOptions: {
 			globals: {
-				...globals.browser,
+				...globals.browser, // 继承浏览器环境变量（如 window, document）
+				process: true,
+				/* 忽略 Vant 4 的 Toast 相关全局变量 */
+				showToast: true,
+				closeToast: true,
+				showLoadingToast: true,
+				showConfirmDialog: true,
+				showImagePreview: true,
 				// 追加一些其他自定义全局规则
 			},
 		},
